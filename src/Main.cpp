@@ -61,7 +61,7 @@ int main()
   for (int i = 0; i < NUM_THREADS; i++)
   {
     std::cout << "main() : creating thread, " << i << std::endl;
-    if (pthread_create(&threads[i], NULL, randomForce, (void *) i))
+    if (pthread_create(&threads[i], NULL, randomForce, (void *)&i))
       std::cout << "Error:unable to create thread" << std::endl;
   }
   pthread_exit(NULL);

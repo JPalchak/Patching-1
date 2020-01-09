@@ -46,6 +46,8 @@
 #define STRAIGHT_HORIZONTAL 24    // _         // Y
 #define STRAIGHT_VERTICAL 25                   // Z
 
+#define CROSS 26                  // +         // AA
+
 // Generic piece functions
 #define isSpool(x) (x >= SPOOL_LEFT && x <= SPOOL_DOWN)
 #define isTieOff(x) (x >= TIE_OFF_LEFT && x <= TIE_OFF_DOWN)
